@@ -18,7 +18,7 @@ that can be branched.
 
 # Data Description
 NQ contains 307,372 training examples, 7,830 examples for development, and we
-withold a further 7,842 examples for testing. In the paper, we demonstrate a
+withhold a further 7,842 examples for testing. In the paper, we demonstrate a
 human upper bound of 87% F1 on the long answer selection task, and 76% on the
 short answer selection task.
 
@@ -30,7 +30,7 @@ Instructions on building the Docker image are given [here](competition.md).
 
 ## Data Format
 Each example in NQ contains the rendered HTML of an entire Wikipedia page, as
-well as a tokenized representation of the text on the page. We supply the
+well as a tokenized representation of the text on the page. We supply the raw HTML
 so that participants are not constrained by our choices in text processing.
 However, we also expect that most users will choose to use the simpler tokenized
 form of the data. The evaluation script recognizes predictions as either byte
@@ -38,7 +38,7 @@ offsets into the HTML or token offsets into the token sequence.
 
 To help you explore the data, this repository contains a simple
 [data browser](nq_browser.py) that you can run on your own machine, and modify
-as you see fit. We also have provided preprocessing utilities and tensorflow
+as you see fit. We also have provided preprocessing utilities and TensorFlow
 dataset code in
 [the repository containing the baseline systems presented in our paper](https://github.com/google-research/language/tree/master/language/question_answering).
 The rest of this section describes the data format thouroughly in reference to
